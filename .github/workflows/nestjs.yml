@@ -27,7 +27,7 @@ jobs:
           DB_USERNAME=${{ secrets.DB_USERNAME }}
           DB_PASSWORD=${{ secrets.DB_PASSWORD }}
           EOF
-    - run: pm2 stop backend
+    # - run: pm2 stop backend
     - run: npm i
     - run: npm run build
     - run: pm2 start "npm start" --name=backend

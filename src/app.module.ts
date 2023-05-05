@@ -16,7 +16,17 @@ const cookieSession = require('cookie-session');
       isGlobal: true,
       envFilePath: `.env.${process.env.NODE_ENV}`,
     }),
-    TypeOrmModule.forRoot(),
+    TypeOrmModule.forRoot(
+      {
+        host: 'localhost',
+        type: 'postgres',
+        port: 5433,
+        username: 'admin',
+        password: 'xvenJTz9&D60',
+        database: 'resume_scorer',
+        entities: ["dist/**/*.entity{.ts,.js}"],
+      }
+    ),
     UsersModule,
     ReportsModule,
   ],
