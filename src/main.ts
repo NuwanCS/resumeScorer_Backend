@@ -9,6 +9,7 @@ async function bootstrap() {
     res.removeHeader('date');
     next();
   });
+  app.setGlobalPrefix('api');
   await app.listen(3000);
 }
 bootstrap();
