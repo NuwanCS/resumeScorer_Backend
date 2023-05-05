@@ -20,7 +20,7 @@ const cookieSession = require('cookie-session');
       {
         host: 'localhost',
         type: 'postgres',
-        port: 5433,
+        port: 5432,
         username: 'admin',
         password: 'xvenJTz9&D60',
         database: 'resume_scorer',
