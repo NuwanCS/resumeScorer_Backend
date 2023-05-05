@@ -32,11 +32,12 @@
     "class-validator": "^0.13.1",
     "cookie-session": "^1.4.0",
     "cross-env": "^7.0.3",
+    "pg": "^8.10.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.6.6",
     "sqlite3": "^5.0.2",
-    "typeorm": "^0.2.34"
+    "typeorm": "^0.2.45"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.6.0",
