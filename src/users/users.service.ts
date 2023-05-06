@@ -10,19 +10,6 @@ export class UsersService {
   async createUser(email: string, password: string) {
     const user = this.userRepository.create({ email, password });
 
-    const foundUser = await this.userRepository.find({
-      where: {
-        email,
-      },
-    });
-
-    if (foundUser) {
-      throw new HttpException(
-        'user.AlreadyExists',
-        HttpStatus.BAD_REQUEST,
-      );
-    }
-
     return this.userRepository.save(user);
   }
 
